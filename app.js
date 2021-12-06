@@ -14,9 +14,9 @@ password_user = '1234';
 const path = require('path');
 app.use(express.static('./dist/Frontend'));
 
-app.get('/',function(req,res){
-    console.log("welcome");
-})
+// app.get('/api',function(req,res){
+//     console.log("welcome");
+// })
 
 app.get('/api/books',function(req,res){
    //console.log("in backend book");
