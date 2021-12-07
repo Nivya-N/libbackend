@@ -14,6 +14,12 @@ password_user = '1234';
 const path = require('path');
 app.use(express.static('./dist/Frontend'));
 
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");    
+    next();
+  });
+
 // app.get('/api',function(req,res){
 //     console.log("welcome");
 // })
