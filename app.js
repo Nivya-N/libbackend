@@ -104,7 +104,7 @@ app.get('/api/authors',function(req,res){
 
 app.post('/api/addauthor',function(req,res){
    
-    // console.log(" in backedn",req.body);
+    console.log(" in backedn",req.body);
     
      var author = {       
          name : req.body.authoritem.name,
