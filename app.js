@@ -70,7 +70,7 @@ app.put('/api/update',(req,res)=>
     author = req.body.author,
     genre = req.body.genre,
     image = req.body.image;
-    
+     
     
    Bookdata.findByIdAndUpdate({"_id":id},
                                 {$set:{"title":title,
